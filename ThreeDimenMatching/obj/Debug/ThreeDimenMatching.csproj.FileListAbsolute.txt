@@ -1,0 +1,7 @@
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Debug\ThreeDimenMatching.exe.config
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Debug\ThreeDimenMatching.exe
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Debug\ThreeDimenMatching.pdb
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\obj\Debug\ThreeDimenMatching.csprojAssemblyReference.cache
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\obj\Debug\ThreeDimenMatching.csproj.CoreCompileInputs.cache
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\obj\Debug\ThreeDimenMatching.exe
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\obj\Debug\ThreeDimenMatching.pdb
