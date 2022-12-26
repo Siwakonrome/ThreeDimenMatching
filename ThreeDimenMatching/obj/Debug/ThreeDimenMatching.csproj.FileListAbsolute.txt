@@ -5,3 +5,12 @@ C:\Test\ThreeDimenMatching\ThreeDimenMatching\obj\Debug\ThreeDimenMatching.cspro
 C:\Test\ThreeDimenMatching\ThreeDimenMatching\obj\Debug\ThreeDimenMatching.csproj.CoreCompileInputs.cache
 C:\Test\ThreeDimenMatching\ThreeDimenMatching\obj\Debug\ThreeDimenMatching.exe
 C:\Test\ThreeDimenMatching\ThreeDimenMatching\obj\Debug\ThreeDimenMatching.pdb
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Debug\halcondotnet.dll
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Debug\hdevenginedotnet.dll
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Debug\Newtonsoft.Json.Bson.dll
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Debug\Newtonsoft.Json.dll
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Debug\Newtonsoft.Json.pdb
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Debug\Newtonsoft.Json.xml
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Debug\Newtonsoft.Json.Bson.pdb
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Debug\Newtonsoft.Json.Bson.xml
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\obj\Debug\ThreeDimenMatching.csproj.CopyComplete

@@ -1,21 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-/*using ThreeDimenMatching.Constant;
-using ThreeDimenMatching.Halper;
-using System.Windows.Forms;*/
-//using HalconDotNet;
-using ThreeDimenMatching.Models;
-using System.Linq;
-using System.Data;
 using System.IO;
-using System.Threading;
-using System.Text;
-using System.Net.Sockets;
 using System.Net;
-using System.Diagnostics;
-using ThreeDimenMatching.RosBridge;
-using System.Reflection;
+using System.Text;
+using HalconDotNet;
 using Newtonsoft.Json;
+using System.Net.Sockets;
+//using ThreeDimenMatching.Halper;
+using System.Collections.Generic;
+using ThreeDimenMatching.Constant;
 
 namespace ThreeDimenMatching
 {
@@ -23,41 +15,10 @@ namespace ThreeDimenMatching
     {
         static void Main(string[] args)
         {
-            /*string SERVER_IP = "";
-            IPAddress ipAddr = IPAddress.Parse(SERVER_IP);
-            IPEndPoint localEndPoint = new IPEndPoint(ipAddr, 0);
-            Socket sender = new Socket(ipAddr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-            sender.Connect(localEndPoint);
-            try
-            {
-                string topic = "/api/object_manipulation/req";
-                Dictionary<string, string> msgs_topic_dict = new Dictionary<string, string>()
-                {
-                    { topic, "std_msgs/String" },
-                };
-                RosOperator.advertise_topic(msgs_topic_dict, sender);
-                Socket api_req = RosOperator.subscribe_req(topic, sender);
-                while (true)
-                {
-                    try
-                    {
-                        string result = RosOperator.subscribe(api_req);
-                        RosSubFormat rosSubFormat = JsonConvert.DeserializeObject<RosSubFormat>(result);
-                        WebReqEvent addGripper = JsonConvert.DeserializeObject<WebReqEvent>(rosSubFormat.msg.data);
-                    }
-                    catch
-                    {
-                        
-                    }
-                }
-            }catch{}*/
-
-
-            
             string dataReceived = String.Empty;
             TcpClient client;
-            IPAddress localAdd = IPAddress.Parse("");
-            TcpListener listener = new TcpListener(localAdd, 0);
+            IPAddress localAdd = IPAddress.Parse("127.0.0.1");
+            TcpListener listener = new TcpListener(localAdd, 8800);
             try
             {
                 listener.Start();
@@ -75,32 +36,32 @@ namespace ThreeDimenMatching
                     catch { continue; }
                     if (dataReceived != String.Empty)
                     {
-                        DataReceived received = JsonConvert.DeserializeObject<DataReceived>(dataReceived);
-                        
-
-
-
-                        /*List<Pose> mrs = new List<Pose>();
-                        string textToSend = String.Empty;
-                        // Sort high object to 0 index.
-                        mrs = matching_method(dataReceived, true);
-                        if (mrs.Count == LocalConstant.number0)
+                        try
                         {
-                            textToSend = "{" + $"\"modelName\":\"{String.Empty}\", \"x\":0.0, \"y\":0.0, \"z\":0.0, \"rx\":0.0, \"ry\":0.0, \"rz\":0.0, \"score\":0.0" + "}";
+                            string resp = String.Empty;
+                            if (dataReceived == TcpRecivedType.score)
+                            {
+                                resp = "{\"score\":\"0.2\"}";
+                            }
+                            else if (dataReceived == TcpRecivedType.load)
+                            {
+                                resp = "{\"load\":200}";
+                            }
+                            else if (dataReceived == TcpRecivedType.match)
+                            {
+                                resp = "{\"match\":\"1.0/1.0/1.0/1.0/1.0/1.0\"}";
+                            }
+                            else if (dataReceived == TcpRecivedType.camera)
+                            {
+                                resp = "{\"camera\":1}";
+                            }
+                            byte[] bytesToSend = ASCIIEncoding.ASCII.GetBytes(resp);
+                            nwStream.Write(bytesToSend, 0, bytesToSend.Length);
                         }
-                        else
-                        {
-                            textToSend = "{" + $"\"modelName\":\"{mrs[0].modelName}\", \"x\":{mrs[0].x}, \"y\":{mrs[0].y}, \"z\":{mrs[0].z}, \"rx\":{mrs[0].rx}, \"ry\":{mrs[0].ry}, \"rz\":{mrs[0].rz}, \"score\":{mrs[0].score}" + "}";
-                        }
-                        byte[] bytesToSend = ASCIIEncoding.ASCII.GetBytes(textToSend);
-                        nwStream.Write(bytesToSend, 0, bytesToSend.Length);*/
+                        catch { }                   
                     }
                 }
-            }
-            catch
-            {
-            }
-
+            }catch{ }
         }
     }
 }

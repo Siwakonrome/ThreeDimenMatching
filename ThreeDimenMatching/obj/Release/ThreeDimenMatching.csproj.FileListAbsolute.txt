@@ -1,0 +1,15 @@
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Release\ThreeDimenMatching.exe.config
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Release\ThreeDimenMatching.exe
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Release\ThreeDimenMatching.pdb
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Release\halcondotnet.dll
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Release\hdevenginedotnet.dll
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Release\Newtonsoft.Json.Bson.dll
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Release\Newtonsoft.Json.dll
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Release\Newtonsoft.Json.pdb
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Release\Newtonsoft.Json.xml
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Release\Newtonsoft.Json.Bson.pdb
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\bin\Release\Newtonsoft.Json.Bson.xml
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\obj\Release\ThreeDimenMatching.csproj.CoreCompileInputs.cache
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\obj\Release\ThreeDimenMatching.csproj.CopyComplete
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\obj\Release\ThreeDimenMatching.exe
+C:\Test\ThreeDimenMatching\ThreeDimenMatching\obj\Release\ThreeDimenMatching.pdb
