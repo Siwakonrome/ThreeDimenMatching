@@ -48,11 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\InsertModel.cs" />
-    <Compile Include="Models\Joints.cs" />
-    <Compile Include="Models\Pose.cs" />
-    <Compile Include="Models\RegionMatching.cs" />
-    <Compile Include="Models\UpdateModel.cs" />
+    <Compile Include="Models\DataReceived.cs" />
+    <Compile Include="Models\RosMsgsStdSring.cs" />
+    <Compile Include="Models\RosSubFormat.cs" />
+    <Compile Include="Models\WebReqEvent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RosBridge\RosOperator.cs" />
