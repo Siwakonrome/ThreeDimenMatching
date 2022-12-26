@@ -21,6 +21,7 @@ namespace ThreeDimenMatching
             TcpListener listener = new TcpListener(localAdd, 8800);
             try
             {
+
                 listener.Start();
                 while (true)
                 {
@@ -61,6 +62,7 @@ namespace ThreeDimenMatching
                         catch { }                   
                     }
                 }
+                
             }catch{ }
         }
     }
